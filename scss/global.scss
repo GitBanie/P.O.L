@@ -1,0 +1,75 @@
+//Global
+body {
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    font-size: 1.6rem;
+    color: $colorPrimary;
+}
+
+a,
+p {
+    color: $colorPrimary;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title p {
+    font-family: 'Playfair Display', serif;
+}
+
+//Card
+.title h1,
+.card-title {
+    text-transform: uppercase;
+}
+
+.card {
+    height: 100%;
+}
+
+.title {
+    em {
+        font-weight: 600;
+    }
+}
+
+.card-title {
+    font-size: 1rem;
+}
+
+.card-btn,
+.card-btn:hover {
+    font-size: 1rem;
+    color: $colorSecondary;
+}
+
+.btn-warning,
+.btn-warning:hover {
+    background-color: $colorSecondary !important;
+}
+
+.check {
+    border: 1px solid #d8d8d8;
+    vertical-align: middle;
+    height: 13px;
+    margin: 0 10px 0 0;
+    width: 13px;
+}
+
+i{
+    cursor: pointer;
+}

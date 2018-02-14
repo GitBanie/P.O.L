@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="P.O.L. sont les 3 initiales de Paul Otchakovsky-Laurens. Son catalogue est éclectique (plus de 300 écrivains) : de la littérature expérimentale au roman plus traditionnel.  Sa maison d’édition est aussi reconnue pour sa production importante de pièces de théâtre et de recueils de poésie.">
+    <meta name="author" lang="fr" content="Christopher Navas">
+    <title>Page de recherche personnalisé</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="img/LogoPol.ico">
+    <!-- Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,500,600,800|Playfair+Display:400,700|Raleway:300,500,600,700" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Slick css -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <!-- Custom checkbox-->
+    <link rel="stylesheet" href="css/pretty-checkbox.min.css">
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+        <header class="container header">
+            <div class="top row">
+                <div class="logo col-2">
+                    <a href="index.html">
+                        <img src="img/LogoPol.png" alt="Logo du site">
+                    </a>
+                </div>
+                <div class="search col">
+                    <!-- Search form -->
+                    <form class="form-inline md-form form-sm active-cyan-2 row " action="searchResult.html">
+                        <div class="select col-2">
+                            <select name="type" id="type" class="form-control">
+                               <option value="" disabled selected>Type</option>
+                               <option value="livres">Livres</option>
+                               <option value="blog">Blog</option>
+                               <option value="video">Vidéo</option>
+                               <option value="son">Son</option>
+                           </select>
+                        </div>
+                        <div class="Marecherche col">
+                            <input class="form-control w-75 mr-3" type="text" placeholder="Ma recherche" aria-label="Search"><i class="fa fa-search cursor" aria-hidden="true"></i>
+                        </div>
+                    </form>
+                </div>
+                <div class="espaceMembre col">
+                    <div class="compte hoverable">
+                        <a href="#">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <span>Mon compte</span>
+                        </a>
+                    </div>
+                    <div class="alertes hoverable">
+                        <a href="#">
+                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            <span>Mes alertes</span>
+                        </a>
+                    </div>
+                    <div class="favoris hoverable">
+                        <a href="#">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i><br>
+                            <span>Mes favoris</span>
+                        </a>
+                    </div>
+                    <div class="reservation hoverable">
+                        <a href="#">
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            <span>Ma réservation</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bot row">
+                <nav>
+                    <ul class='nav nav-pills'>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Actualités</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Nouveautés</a>
+                                <a class="dropdown-item" href="#">À paraître</a>
+                                <a class="dropdown-item" href="#">À la une</a>
+                                <a class="dropdown-item" href="#">Agenda</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="">Auteurs</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Livres</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Catégories</a>
+                                <a class="dropdown-item" href="#">Collections</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="">À voir, à écouter</a></li>
+                        <li class="nav-item"><a href="">Blog des auteurs</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <section class="banner container-fluid">
+            <div class="contentBanner text-center">
+                <div class="titleBanner">
+                    <h1>Nouveau</h1>
+                </div>
+                <div class="blockBanner">
+                    <p>Réservez en ligne <br> votre livre <br> et <br> Retirez-le dans votre librairie</p>
+                    <a href="" class=" btn btn-warning">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="catalog container">
+            <div class="fil-ariane">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                    <li class="breadcrumb-item active">Votre recherche: <strong>Winckler</strong> (26 résultats)</li>
+                </ol>
+            </div>
+
+            <nav class="customFilter container">
+                <div class="top row">
+                    <span>Filter par:</span>
+                    <ul>
+                        <li id="all">Tous</li>
+                        <li id="livres">Livres</li>
+                        <li id="texte">Textes en ligne</li>
+                        <li id="video">Vidéo</li>
+                        <li id="son">Sons</li>
+                    </ul>
+
+                </div>
+                <div class="bot row">
+
+                    <p>Nombre de résultats par page:</p>
+                    <ul>
+                        <li class="active"><a href="">6</a></li>
+                        <li><a href="">12</a></li>
+                        <li><a href="">24</a></li>
+                        <li><a href="">48</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <div class="row contentCatalog">
+                <div class="col_left col-3 text-center">
+                    <div class="content">
+                        <div class="filter">
+                            <span>Filtrer</span>
+                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="displayFilter">
+
+                            <div class="auteur">
+                                <div class="filtersTitle">
+                                    <span>Auteur</span>
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="filtersContent">
+                                    <!-- Pas d'attribut name car le filtre est géré dynamiquement-->
+
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="martin" />
+                                        <div class="state p-primary">
+                                            <label for="martin">Martin Winckler</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+<button>
+                        <div class="more">
+                            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                            <span>Voir plus</span>
+                        </div>
+                        <div class="less">
+                            <i class="fa fa-sort-asc" aria-hidden="true"></i>
+                            <span>Voir moins</span>
+                        </div>
+                    </button>
+-->
+                            </div>
+
+                            <div class="genre">
+                                <div class="filtersTitle">
+                                    <span>Genre et thème</span>
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                </div>
+                                <div class="filtersContent">
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="roman" />
+                                        <div class="state p-primary">
+                                            <label for="roman">Roman (5)</label>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="fiction" />
+                                        <div class="state p-primary">
+                                            <label for="fiction">Fiction (4)</label>
+                                        </div>
+
+                                    </div>
+                                    <br>
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="sante" />
+                                        <div class="state p-primary">
+                                            <label for="sante">Santé (3)</label>
+                                        </div>
+                                    </div>
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="temoignage" />
+                                        <div class="state p-primary">
+                                            <label for="temoignage">Témoignage (2)</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="format">
+                                <div class="filtersTitle">
+                                    <span>Format disponible</span>
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                </div>
+                                <div class="filtersContent">
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="broche" />
+                                        <div class="state p-primary">
+                                            <label for="broche">Broché (15)</label>
+                                        </div>
+                                    </div>
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="poche" />
+                                        <div class="state p-primary">
+                                            <label for="poche">Poche (0)</label>
+                                        </div>
+                                    </div>
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="numerique" />
+                                        <div class="state p-primary">
+                                            <label for="numerique">Numérique (0)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="collection">
+                                <div class="filtersTitle">
+                                    <span>Collection</span>
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                </div>
+                                <div class="filtersContent">
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="petitPOL" />
+                                        <div class="state p-primary">
+                                            <label for="petitPOL">PetitPOL</label>
+                                        </div>
+                                    </div>
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="POL_ar" />
+                                        <div class="state p-primary">
+                                            <label for="POL_ar">POL ar</label>
+                                        </div>
+                                    </div>
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="format_poche" />
+                                        <div class="state p-primary">
+                                            <label for="format_poche">Format poche</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="parution">
+                                <div class="filtersTitle">
+                                    <span>Date de parution</span>
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                </div>
+                                <div class="filtersContent">
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="a_paraitre" />
+                                        <div class="state p-primary">
+                                            <label for="a_paraitre">A paraître (0)</label>
+                                        </div>
+                                    </div>
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="nouveautes" />
+                                        <div class="state p-primary">
+                                            <label for="nouveautes">Nouveautés (1)</label>
+                                        </div>
+                                    </div>
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="3-6_mois" />
+                                        <div class="state p-primary">
+                                            <label for="3-6_mois">3 - 6 mois (1)</label>
+                                        </div>
+                                    </div>
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="3-6_mois" />
+                                        <div class="state p-primary">
+                                            <label for="3-6_mois">6 - 12 mois (4)</label>
+                                        </div>
+                                    </div>
+                                    <div class="pretty p-default">
+                                        <input type="checkbox" id="plus_12_mois" />
+                                        <div class="state p-primary">
+                                            <label for="plus_12_mois">+ 12 mois (20)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_right col">
+                    <div class="library">
+
+                        <div class="row">
+
+                            <div class="oneCard auteur col">
+                                <!--Card-->
+                                <div class="card auteur">
+
+                                    <!--Card image-->
+                                    <figure>
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="img/martin-winckler.png" class="img-fluid" alt="image de martin winckler">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                        <figcaption>
+                                            <h2>Martin Winckler</h2>
+                                        </figcaption>
+                                    </figure>
+
+                                    <!--Card content-->
+                                    <div class="card-body">
+                                        <!--Title-->
+                                        <h3 class="card-title">Présentation de l'auteur</h3>
+                                        <!--Text-->
+                                        <p class="card-text">Médecin français, né le 22 février 1955 à Alger. Connu comme romancier et essayiste, il évoque souvent la situation du système médical français.</p>
+                                        <div class="picto">
+                                            <a href="">
+                                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+                                            </a>
+                                            <span>15 livres</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--/.Card-->
+                            </div>
+
+                            <div class="oneCard livre col">
+                                <!--Card-->
+                                <div class="card livre">
+
+                                    <!--Card image-->
+                                    <figure>
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="img/les_histoires_de_franz.png" class="img-fluid" alt="Livres de Martin Winckler, les histoires de Franz">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                        <figcaption>
+                                            <h2>Martin Winckler</h2>
+                                        </figcaption>
+                                    </figure>
+
+                                    <!--Card content-->
+                                    <div class="card-body">
+                                        <!--Title-->
+                                        <h2 class="card-title">Livre</h2>
+                                        <h3 class="card-title">Saga-Fiction</h3>
+                                        <!--Text-->
+                                        <p class="card-text">Ce deuxième volet suit la famille Farkas entre 1965 et 1970. Abraham est devenu médecin responsable de la maternité à l’hôpital local de Tilliers ...</p>
+                                        <div class="picto">
+                                            <a href="">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                            </a>
+                                            <span>Aout 2017</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--/.Card-->
+                            </div>
+
+                            <div class="oneCard movie col">
+                                <!--Card-->
+                                <div class="card movie">
+
+                                    <!--Card image-->
+                                    <figure>
+
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9bPmlcYuVWI?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+                                        <figcaption>
+                                            <h2>Martin Winckler</h2>
+                                        </figcaption>
+                                    </figure>
+
+                                    <!--Card content-->
+                                    <div class="card-body">
+                                        <!--Title-->
+                                        <h2 class="card-title">Video</h2>
+                                        <h3 class="card-title">Retour sur son livre</h3>
+                                        <!--Text-->
+                                        <p class="card-text">Les mots de l’auteur sur son livre: Les Histoires de Franz. ”Je n’écrit pas le roman de ma vie, mais des moments que j’aurai aimé vivre...”.</p>
+                                        <div class="picto">
+                                            <a href="">
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            </a>
+                                            <span>Aout 2017</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="oneCard movie col">
+                                <!--Card-->
+                                <div class="card movie">
+
+                                    <!--Card image-->
+                                    <figure>
+
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4z6SYON-5F4?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+                                        <figcaption>
+                                            <h2>Martin Winckler</h2>
+                                        </figcaption>
+                                    </figure>
+
+                                    <!--Card content-->
+                                    <div class="card-body">
+                                        <!--Title-->
+                                        <h2 class="card-title">Video</h2>
+                                        <h3 class="card-title">Contexte d'écriture</h3>
+                                        <!--Text-->
+                                        <p class="card-text">Retour sur son livre Légende: “Les fictions qui nous accompagnent, qui nous aident à grandir et nous ouvrent sur le monde, ne sont pas seulement les livres que nous avons lus...”</p>
+                                        <div class="picto">
+                                            <a href="">
+                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            </a>
+                                            <span>Depuis 1955</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--/.Card-->
+                            </div>
+
+                            <div class="oneCard livre col">
+                                <!--Card-->
+                                <div class="card livre">
+
+                                    <!--Card image-->
+                                    <figure>
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="img/plumes-dange.png" class="img-fluid" alt="Livres de Martin Winckler, Plumes d'ange">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                        <figcaption>
+                                            <h2>Martin Winckler</h2>
+                                        </figcaption>
+                                    </figure>
+
+                                    <!--Card content-->
+                                    <div class="card-body">
+                                        <!--Title-->
+                                        <h2 class="card-title">Livre</h2>
+                                        <h3 class="card-title">Saga - Fiction</h3>
+                                        <!--Text-->
+                                        <p class="card-text">Ange m’a beaucoup parlé, et j’ai cru qu’il était « naturel » pour un père de parler à son enfant avant de comprendre que ça ne l’était pas pour tout le monde… </p>
+                                        <div class="picto">
+                                            <a href="">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                            </a>
+                                            <span>Mai 2013</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--/.Card-->
+                            </div>
+
+                            <div class="oneCard livre col">
+                                <!--Card-->
+                                <div class="card livre">
+
+                                    <!--Card image-->
+                                    <figure>
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="img/legendes.png" class="img-fluid" alt="Livres de Martin Winckler, legendes">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                        <figcaption>
+                                            <h2>Martin Winckler</h2>
+                                        </figcaption>
+                                    </figure>
+
+                                    <!--Card content-->
+                                    <div class="card-body">
+                                        <!--Title-->
+                                        <h2 class="card-title">Livre</h2>
+                                        <h3 class="card-title">Témoignage</h3>
+                                        <!--Text-->
+                                        <p class="card-text">Pour ne pas se dissoudre dans l’écoulement du temps, chaque homme, chaque femme, élabore également ses fictions personnelles à mensonges.</p>
+                                        <div class="picto">
+                                            <a href="">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                            </a>
+                                            <span>Depuis 1995</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <nav class="pagesNav row">
+                <a href="">Précédent</a>
+
+                <ul>
+                    <li class="active"><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                </ul>
+                <a href="">Suivant</a>
+            </nav>
+
+        </section>
+
+
+
+
+        <footer class="container-fluid footer">
+            <div class="contentFooter text-center">
+                <div class="reseaux">
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="pages">
+                    <ul>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Trafic : s'abonner</a></li>
+                        <li><a href="">Nous connaître</a></li>
+                        <li><a href="">Liens</a></li>
+                    </ul>
+                </div>
+                <div class="pagesAnnexe">
+                    <ul>
+                        <li><a href="">Crédits</a></li>
+                        <li><a href="">Mentions légales</a></li>
+                        <li><a href="">©P.O.L 2017</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Slick  -->
+    <script type="text/javascript" src="js/slick.js"></script>
+    <!-- My code-->
+    <script type="text/javascript" src="js/code.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+// Header
+.header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    .top {
+
+        @include flexbox();
+        @include align-items(flex-end);
+
+        .search {
+
+            button {
+                cursor: pointer;
+            }
+            .white:hover {
+                background-color: $colorPrimary;
+            }
+
+            .form-inline {
+                margin-bottom: -0.8rem;
+            }
+
+            select#type {
+                position: relative;
+                bottom: -0.2rem;
+            }
+            .cursor {
+                cursor: pointer;
+            }
+            input[type=text]:focus {
+                border-bottom: 1px solid #404A7E;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: rgb(64, 74, 126);
+                box-shadow: 0 1px 0 0 #404A7E;
+
+            }
+
+        }
+
+        .espaceMembre {
+            @include flexbox();
+            @include justify-content(space-between);
+            font-size: 1.2rem;
+            text-align: center;
+
+            span {
+                display: block;
+            }
+
+            a {
+                display: block;
+                padding: 0 0.6rem;
+            }
+            a:hover {
+                background-color: $colorPrimary;
+                color: white;
+            }
+            .hoverable {
+                transition: none;
+            }
+
+        }
+
+
+
+    }
+    .bot {
+        padding-top: 2rem;
+        @include justify-content(center);
+
+        nav {
+
+            ul {
+                @include flexbox();
+                margin: 0px;
+                padding: 0px;
+                li {
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                    a {
+                        padding: 1em;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .nav-pills .nav-link.active,
+            .nav-pills .show > .nav-link {
+                color: #fff;
+                background-color: #404a7e;
+            }
+        }
+
+    }
+}

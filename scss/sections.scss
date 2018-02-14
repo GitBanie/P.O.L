@@ -1,0 +1,392 @@
+//Sections marge
+.aLaUne,
+.agenda,
+.voir_ecouter {
+    padding: 6rem 0;
+}
+
+//Section a la une
+.aLaUne {
+    .card {
+
+        font-family: 'Cataraman', serif;
+
+    }
+    .card-button {
+        @include flexbox();
+        @include justify-content(flex-end);
+        font-weight: 700;
+    }
+
+
+}
+
+//Section Agenda
+.agenda {
+
+    .img-fluid {
+        width: 100%;
+    }
+
+    .oneCard {
+        margin: 3rem 0;
+    }
+
+    .card-text {
+        font-family: 'Playfair Display', serif;
+        em {
+            font-weight: 600;
+        }
+    }
+
+
+}
+
+
+//Section blog des Auteurs
+.blogAuteur {
+    background-color: #C4CBD2;
+    h1 {
+        text-transform: uppercase;
+    }
+    h2 {
+        font-weight: 600;
+        margin-bottom: 3rem;
+    }
+}
+
+.contentBlog,
+.textBlog {
+
+    padding: 3rem 0;
+}
+
+.textBlog p:first-of-type::first-letter {
+    font-weight: 600;
+}
+
+.blog-btn {
+    @include flexbox();
+    @include justify-content(flex-end);
+    font-weight: 600;
+}
+
+//Section a voir et a ecouter
+
+//Media
+
+@media screen and (max-width:540px){
+    
+    .video iframe,.audio iframe{
+        height: auto;
+    }
+    
+}
+
+.video,
+.audio {
+    background-color: #758C9B;
+    padding: 2rem 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    margin: 3rem 0;
+}
+
+.video h3,
+.audio h3 {
+    font-size: 2rem;
+    font-family: 'Cataraman', serif;
+    color: #000;
+}
+
+.video p {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.audio p {
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.audio figure {
+    position: relative;
+}
+
+.audio figcaption {
+    position: absolute;
+    bottom: -0.8rem;
+    width: 100%;
+}
+
+.text {
+    background-color: #c4cbd2;
+    padding: 1.9rem;
+}
+
+
+.video iframe,
+.audio img {
+    padding: 0.5rem;
+    background-color: white;
+}
+
+
+//Banner
+.banner {
+    background: url(../img/polfemme-sourire.png) center no-repeat;
+    background-size: cover;
+
+    .contentBanner {
+        padding: 3rem 0;
+    }
+
+    .titleBanner {
+        color: #fff;
+        h1 {
+            text-transform: uppercase;
+        }
+    }
+    .blockBanner {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 50%;
+        margin: auto;
+        padding: 2rem;
+        p {
+            font-weight: 600;
+        }
+    }
+}
+
+//Catalog
+.catalog {
+
+
+    ul {
+        @include flexbox();
+    }
+
+    .fil-ariane {
+        text-align: center;
+        @include flexbox();
+        @include justify-content(center);
+
+        .breadcrumb {
+            background: none;
+            text-align: center;
+        }
+
+    }
+    .customFilter {
+        background-color: #e3e4ec;
+        border: 0.5px #000 solid;
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+        font-family: "Catamaran", sans-serif;
+
+        .top,
+        .bot {
+            margin-left: 2rem;
+        }
+        .top {
+            padding-top: 1rem;
+            ul {
+                margin-left: 8rem;
+                cursor: pointer;
+
+            }
+        }
+
+        li {
+            padding: 0 2rem;
+        }
+        li::after {
+            content: " | ";
+            position: relative;
+            right: -1.5rem;
+            font-weight: 300;
+        }
+        .active {
+            font-weight: 600;
+        }
+        
+        li:last-child::after{
+            content: none;
+        }
+    }
+
+    .contentCatalog {
+        padding-top: 3rem;
+
+    }
+
+
+    .col_left {
+        
+        i{
+            cursor: pointer;
+        }
+
+        .content {
+
+            border: $colorPrimary 2px solid;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+
+            .displayFilter {
+                background-color: #e3e4ec;
+            }
+
+            .filter {
+                background-color: $colorPrimary;
+                color: white;
+                @include flexbox();
+                @include justify-content(space-between);
+                padding: 1rem;
+                align-items: center;
+            }
+            .filtersTitle {
+                font-weight: 600;
+                @include flexbox();
+                @include justify-content(space-between);
+                padding: 1rem;
+                align-items: center;
+                font-size: 1.4rem;
+            }
+            .filtersContent {
+                font-size: 1rem;
+                text-align: start;
+                padding-left: 4rem;
+                a {
+                    display: block;
+                }
+            }
+            label {
+                cursor: pointer;
+            }
+
+            .auteur,
+            .genre,
+            .format,
+            .collection,
+            .parution {
+                border-top: 1px solid #000;
+                padding-bottom: 1rem;
+            }
+
+        }
+    }
+
+    .col_right {
+
+        .card-body {
+            background-color: #e3e4ec;
+            border: 0.5px #000 solid;
+        }
+
+        .oneCard {
+            margin-bottom: 2rem;
+            position: relative;
+
+            figure {
+                position: relative;
+                margin: 0;
+                background: #000;
+                img {
+                    height: 200px;
+                    width: 100%;
+                }
+                iframe {
+                    height: 190px;
+                    width: 99%;
+                }
+
+                figcaption {
+                    width: 100%;
+                    height: 2.3rem;
+                    background-color: $colorPrimary;
+                    color: #fff;
+                    text-align: center;
+                    border-top: 0.5px solid #fff;
+                }
+            }
+
+            .card-title,
+            .card-text {
+                text-align: center;
+            }
+            .card-title {
+                font-weight: 600;
+            }
+            .card-text {
+                color: #404a7e;
+            }
+
+            .picto {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                @include flexbox();
+                @include justify-content(space-around);
+                @include align-items(center);
+
+                span {
+                    font-size: 1rem;
+                    color: #747373;
+                }
+            }
+        }
+
+        .card.livre {
+            .card-title {
+
+                color: $colorSecondary;
+            }
+            figure {
+                border-radius: 1rem;
+            }
+        }
+        .card.auteur {
+            figure {
+                border-radius: 1rem;
+            }
+        }
+        .card.movie {
+            .card-title {
+                color: #1ba9cd;
+            }
+        }
+
+    }
+
+    .pagesNav {
+        background-color: #e3e4ec;
+        border: 0.5px #000 solid;
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+        @include flexbox();
+        @include justify-content(center);
+        font-family: "Catamaran", sans-serif;
+        margin-bottom: 2rem;
+        
+        ul,a{
+                margin-top: 1rem;
+        }
+        
+        ul{
+            padding: 0 7rem;
+        }
+        
+        li::before{
+            content: ' | ';
+            padding: 0 1rem;
+        }
+        
+        li:first-child::before{
+            content: none;
+        }
+        
+        .active{
+            font-weight: 600;
+        }
+    }
+
+}

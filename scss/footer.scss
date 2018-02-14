@@ -1,0 +1,28 @@
+//Footer
+footer {
+    text-transform: uppercase;
+    background-color: #F4F4F4;
+    padding-bottom: 2rem;
+}
+.reseaux{
+    padding-top: 3rem;
+}
+.reseaux ul, .pagesAnnexe ul {
+    @include flexbox();
+    @include justify-content(center);
+    a {
+        padding: 1rem;
+        i {
+            color: #746C61;
+        }
+    }
+}
+.pages ul li{
+    
+    padding: 0.5rem;
+    font-size: 1.3rem;   
+}
+
+.pagesAnnexe{
+    font-size: 1rem;
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="P.O.L. sont les 3 initiales de Paul Otchakovsky-Laurens. Son catalogue est éclectique (plus de 300 écrivains) : de la littérature expérimentale au roman plus traditionnel.  Sa maison d’édition est aussi reconnue pour sa production importante de pièces de théâtre et de recueils de poésie.">
+    <meta name="author" lang="fr" content="Christopher Navas">
+    <title>Bienvenue sur le site des éditions P.O.L</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="img/LogoPol.ico">
+    <!-- Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,500,600,800|Playfair+Display:400,700|Raleway:300,500,600,700" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Slick css -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <header class="container header">
+            <div class="top row">
+                <div class="logo col-2">
+                    <a href="index.html">
+                        <img src="img/LogoPol.png" alt="Logo du site">
+                    </a>
+                </div>
+                <div class="search col">
+                    <!-- Search form -->
+                    <form class="form-inline md-form form-sm active-cyan-2 row " action="searchResult.html">
+                        <div class="select col-2">
+                            <select name="type" id="type" class="form-control">
+                               <option value="" disabled selected>Type</option>
+                               <option value="livres">Livres</option>
+                               <option value="blog">Blog</option>
+                               <option value="video">Vidéo</option>
+                               <option value="son">Son</option>
+                           </select>
+                        </div>
+                        <div class="Marecherche col">
+                            <input class="form-control w-75 mr-3" type="text" placeholder="Ma recherche" aria-label="Search"><i class="fa fa-search cursor" aria-hidden="true"></i>
+                        </div>
+                    </form>
+                </div>
+                <div class="espaceMembre col">
+                    <div class="compte hoverable">
+                        <a href="#">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <span>Mon compte</span>
+                        </a>
+                    </div>
+                    <div class="alertes hoverable">
+                        <a href="#">
+                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            <span>Mes alertes</span>
+                        </a>
+                    </div>
+                    <div class="favoris hoverable">
+                        <a href="#">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i><br>
+                            <span>Mes favoris</span>
+                        </a>
+                    </div>
+                    <div class="reservation hoverable">
+                        <a href="#">
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            <span>Ma réservation</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bot row">
+                <nav>
+                    <ul class='nav nav-pills'>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Actualités</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Nouveautés</a>
+                                <a class="dropdown-item" href="#">À paraître</a>
+                                <a class="dropdown-item" href="#">À la une</a>
+                                <a class="dropdown-item" href="#">Agenda</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="">Auteurs</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Livres</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Catégories</a>
+                                <a class="dropdown-item" href="#">Collections</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="">À voir, à écouter</a></li>
+                        <li class="nav-item"><a href="">Blog des auteurs</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <section class="slickSlider">
+            <div class="slide" id="s1">
+                <img src="img/POL.png" alt="Image de POL" width="100%">
+                <blockquote>
+                    <div class="contentBlockquote">
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        <h2>Je publie les livres <br> que j'aurais aimé avoir écrit</h2>
+                        <cite>Paul Otchakovsky-Laurens</cite>
+                        <p><strong>éditeur et fondateur des éditions p.o.l</strong></p>
+                        <a href="" class="btn btn-warning">Nous connaître</a>
+                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+                    </div>
+                </blockquote>
+            </div>
+
+            <div class="slide" id="s2">
+                <img src="img/image%20auteur.png" alt="Image d'auteur" width="100%">
+                <div class="contentSlider">
+                    <h2>Le Bruiteur</h2>
+                    <a href="" class="btn btn-warning">Nouveauté</a>
+                </div>
+            </div>
+            <div class="slide" id="s3">
+                <img src="img/Marie-NDiaye-l-exilee-volontaire.png" alt="Image de Marie NDiaye" width="100%">
+                <div class="contentSlider">
+                    <h2>L'éxilée Volontaire</h2>
+                    <a href="" class="btn btn-warning">A paraître</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="aLaUne">
+            <div class="content col-md-7 text-center m-auto">
+                <div class="title">
+                    <h1>à la une</h1>
+                    <p>Plongez au <em>coeur</em> de l'édition <br> et surtout ne ratez pas une <em>nouvelle!</em></p>
+                </div>
+
+                <div class="cards">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="img/nina-yargekov.png" class="img-fluid" alt="photo de nina yargekov">
+                            <a href="">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Text-->
+                            <p class="card-text"><em>Nina Yargekov</em> a reçu le <em>Prix de Flore</em> pour son livre <em>"Double nationalité"</em> au Café de Flore, à Paris, le <em>18 décembre 2017</em>. Le jury, présidé par Frédéric Beigbeder, est composé de Jacques Braunstein, Manuel Carcassonne, Carole Chrétiennot, Michèle Fitoussi, Jean-René Van Der Plaetsen, François Reynaert, Jean-Pierre Saccani, Bertrand de Saint-Vincent, Christophe Tison, Philippe Vandel et Arnaud Viviant.</p>
+                            <div class="card-button">
+                                <a href="" class="card-btn">Lire la suite <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="agenda container">
+            <div class="content text-center">
+                <div class="title col-md-7 m-auto">
+                    <h1>Agenda</h1>
+                    <p>Ne manquez pas les <em>rencontres</em> <br> avec <em>vos auteurs préférés</em> pour un <em>moment d'échanges.</em></p>
+                </div>
+            </div>
+
+            <div class="cards row text-center equal-heights">
+
+                <div class="oneCard col-md col-sm-6 col-12 ">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="img/marie-darrieussecq-laureate-prix-medicis.png" class="img-fluid" alt="photo de Marie Darrieussecq">
+                            <a href="">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h1 class="card-title">Samedi 30 Décembre 2017</h1>
+                            <h2 class="card-title">17H30</h2>
+                            <h2 class="card-title">Biarritz</h2>
+                            <!--Text-->
+                            <p class="card-text">Rencontre avec <em>Marie Darrieussecq</em> à la librairie Le Book Store (Biarritz)</p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+
+                <div class="oneCard col-md col-sm-6 col-12">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="img/Jean-Rolin.png" class="img-fluid" alt="photo de Jean Rolin">
+                            <a href="">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h1 class="card-title">Mardi 9 Janvier 2018</h1>
+                            <h2 class="card-title">19H00</h2>
+                            <h2 class="card-title">Paris</h2>
+                            <!--Text-->
+                            <p class="card-text">Retrouvez <em>Jean Rolin</em> à l'occasion de la parution de son livre Le Traquet Kurde à la librairie Michele Ignazi</p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+
+                <div class="oneCard col-md col-sm-6 col-12">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="img/nicolas-fargues.png" class="img-fluid" alt="photo de Nicolas Fargues">
+                            <a href="">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h1 class="card-title">Vendredi 12 Janvier 2018</h1>
+                            <h2 class="card-title">20H00</h2>
+                            <h2 class="card-title">Paris</h2>
+                            <!--Text-->
+                            <p class="card-text">Rencontrez <em>Nicolas Fargues</em> à la Maison de la poésie à l'école d'écriture Les Mots pour l'occasion de la sortie de son livre. Je ne suis pas une héroîne.</p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+
+
+            </div>
+
+            <div class="allDate text-center">
+                <a href="" class="btn btn-warning">Toutes les dates</a>
+            </div>
+
+        </section>
+
+        <section class="blogAuteur container-fluid text-center">
+            <div class="contentBlog container">
+
+                <h1>Le blog des auteurs</h1>
+                <div class="textBlog">
+                    <h2>Les Deux Veuves</h2>
+                    <p>Elle a emménagé dans cet appartement de location au deuxième étage d’un immeuble de briques grises pour trois semaines : la durée prévue pour les travaux de rénovation dans son propre logement, un peu sombre, en rez-de-chaussée, sur cour intérieure, d’un immeuble de briques rouges.
+                    </p>
+                    <p>L’appartement de location est lumineux, la vue dégagée. La nuit, la femme contemple les tours de bureaux du quartier d’affaires qui clignotent au loin. De petites lumières violettes, bleues, rouges, vertes suivent les arêtes des bâtiments de verre, de métal et de béton. Le jour, quand, elle ne travaille pas, la femme lit des romans, allongée sur un canapé gris, et, de temps à autre, elle relève les yeux vers un mur gris où est suspendu l’agrandissement d’une probable photographie de vacances…
+                    </p>
+
+                    <div class="blog-btn">
+                        <a href="" class="card-btn">Lire le texte
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- #end blogAuteur -->
+
+        <section class="voir_ecouter">
+            <div class="content text-center">
+                <div class="title col-md-7 m-auto">
+                    <h1>à voir & à écouter</h1>
+                    <p>Suivez vos <em>auteurs</em> au travers de <em>vidéos</em> et d'<em>audios.</em> <br> Un moment de <em>partage</em> garanti!</p>
+                </div>
+            </div>
+
+            <div class="media container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="video text-center">
+                            <iframe width="100%" height="480" src="https://www.youtube.com/embed/-m8mXePXAN0?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            <h3>Lamia Ziadé</h3>
+                            <p>Ma très grande mélancolie arabe : Lamia Ziadé tente de dire de quoi est faite sa <em>"très mélancolie arabe"</em> et pourquoi ce livre, à l'occasion de sa parution aux éditions P.O.L, un jour de grand vent, à Beyrouth.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="audio">
+                            <figure>
+                                <img src="img/fargues_et_gran.png" alt="photo de Fargues et Gran" width="100%">
+                                <figcaption>
+                                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/313739354&amp;color=%231c3160&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+                                </figcaption>
+                            </figure>
+                            <div class="text text-center">
+                                <h3>Farges et Gran</h3>
+                                <p>Nicolas Fargues & Iegor Gran Ecrire à l'élastique Philippe Vallet <em>France Info</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="container-fluid footer">
+            <div class="contentFooter text-center">
+                <div class="reseaux">
+                    <ul>
+                        <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="pages">
+                    <ul>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Trafic : s'abonner</a></li>
+                        <li><a href="">Nous connaître</a></li>
+                        <li><a href="">Liens</a></li>
+                    </ul>
+                </div>
+                <div class="pagesAnnexe">
+                    <ul>
+                        <li><a href="">Crédits</a></li>
+                        <li><a href="">Mentions légales</a></li>
+                        <li><a href="">©P.O.L 2017</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Slick  -->
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.slickSlider').slick({
+                arrows: true,
+                nextArrow: '<i class="fa fa-chevron-right next"></i>',
+                prevArrow: '<i class="fa fa-chevron-left prev"></i>',
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+
+    </script>
+    <!-- My code -->
+    <script type="text/javascript" src="js/code.js"></script>
+</body>
+
+</html>
